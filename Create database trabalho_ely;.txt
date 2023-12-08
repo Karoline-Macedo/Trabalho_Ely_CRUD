@@ -1,0 +1,11 @@
+Create database trabalho_ely;
+
+
+CREATE TABLE convidados (
+    idpessoa SERIAL PRIMARY KEY,
+    nome VARCHAR(50) NOT NULL,
+    evento VARCHAR(50) NOT NULL,
+    email VARCHAR(100) UNIQUE NOT NULL,
+    telefone VARCHAR(20),
+   	confirmacao boolean 
+);
